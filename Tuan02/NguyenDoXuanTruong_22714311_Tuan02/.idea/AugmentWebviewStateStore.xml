@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AugmentWebviewStateStore">
+    <option name="stateMap">
+      <map>
+        <entry key="CHAT_STATE" value="{&quot;currentConversationId&quot;:&quot;6eb3429c-4ae9-4fcd-81c9-d1d684492229&quot;,&quot;agentExecutionMode&quot;:&quot;manual&quot;,&quot;isPanelCollapsed&quot;:true,&quot;displayedAnnouncements&quot;:[],&quot;conversations&quot;:{&quot;6eb3429c-4ae9-4fcd-81c9-d1d684492229&quot;:{&quot;id&quot;:&quot;6eb3429c-4ae9-4fcd-81c9-d1d684492229&quot;,&quot;createdAtIso&quot;:&quot;2025-09-05T15:08:34.764Z&quot;,&quot;lastInteractedAtIso&quot;:&quot;2025-09-05T15:08:53.362Z&quot;,&quot;chatHistory&quot;:[{&quot;chatItemType&quot;:&quot;exchange-pointer&quot;,&quot;exchangeUuid&quot;:&quot;3337cffb-21ce-4f29-8f3c-2028df98ab1b&quot;,&quot;timestamp&quot;:&quot;2025-09-05T15:08:53.368Z&quot;,&quot;request_message&quot;:&quot;kiem tra xem tai sao toi khong the luu vao mariadb tren heidisql&quot;,&quot;status&quot;:&quot;success&quot;,&quot;seen_state&quot;:&quot;unseen&quot;}],&quot;feedbackStates&quot;:{&quot;temp-fe-42fa985b-c76b-45d7-bc3b-78c6ddaefc2f&quot;:{&quot;selectedRating&quot;:0,&quot;feedbackNote&quot;:&quot;&quot;}},&quot;toolUseStates&quot;:{},&quot;draftExchange&quot;:{&quot;request_message&quot;:&quot;&quot;,&quot;rich_text_json_repr&quot;:{&quot;type&quot;:&quot;doc&quot;,&quot;content&quot;:[{&quot;type&quot;:&quot;paragraph&quot;}]},&quot;status&quot;:&quot;draft&quot;},&quot;requestIds&quot;:[],&quot;isPinned&quot;:false,&quot;isShareable&quot;:true,&quot;extraData&quot;:{&quot;hasDirtyEdits&quot;:false},&quot;personaType&quot;:0}}}" />
+      </map>
+    </option>
+  </component>
+</project>

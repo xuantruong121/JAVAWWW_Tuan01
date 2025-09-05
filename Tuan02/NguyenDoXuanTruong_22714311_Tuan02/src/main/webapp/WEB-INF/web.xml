@@ -5,7 +5,7 @@
          version="6.0">
     <filter>
         <filter-name>authenticationFilter</filter-name>
-        <filter-class>iuh.fit.se.AuthenticationFilter</filter-class>
+        <filter-class>iuh.fit.se.Bai1.AuthenticationFilter</filter-class>
         <init-param>
             <param-name>username</param-name>
             <param-value>u001</param-value>

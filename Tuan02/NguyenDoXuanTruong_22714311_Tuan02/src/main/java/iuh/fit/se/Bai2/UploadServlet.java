@@ -1,4 +1,4 @@
-package com.example.demo;
+package iuh.fit.se.Bai2;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
@@ -27,7 +27,8 @@ public class UploadServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
 
         // Thư mục lưu trữ file trong server (webapp/uploads)
-        String uploadPath = "D:\\Study\\Java_www\\22714311_NguyenDoXuanTruong\\Tuan02\\NguyenDoXuanTruong_22714311_Tuan02\\src\\main\\webapp\\uploads";
+        String uploadPath = "D:\\Study\\Java_www\\22714311_NguyenDoXuanTruong\\Tuan02\\" +
+                "NguyenDoXuanTruong_22714311_Tuan02\\src\\main\\webapp\\uploads";
         File uploadDir = new File(uploadPath);
         if (!uploadDir.exists()) uploadDir.mkdir();
 
