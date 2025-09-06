@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Chat Demo</title>
+</head>
+<body>
+<h1>WebSocket Chat</h1>
+<input type="text" id="username" placeholder="Enter your username"/>
+<button onclick="connect()">Connect</button>
+<br/><br/>
+<input type="text" id="message" placeholder="Type a message"/>
+<button onclick="sendMessage()">Send</button>
+<br/><br/>
+<div id="output"></div>
+
+<script>
+    let ws;
+
+    function connect() {
+        const username = document.getElementById("username").value;
+        if ("WebSocket" in window && username) {
+            ws = new WebSocket("ws://localhost:8080/Lab2_WebSocket/chatEndpoint/" + username);
+
+            ws.onopen = function () {
+                document.getElementById("output").innerHTML += "<br/>Connected to the chat.";
+            };
+
+            ws.onmessage = function (evt) {
+                document.getElementById("output").innerHTML += "<br/>" + evt.data;
+            };
+
+            ws.onclose = function () {
+                document.getElementById("output").innerHTML += "<br/>Connection is closed.";
+            };
+
+            ws.onerror = function (error) {
+                console.log("WebSocket Error: " + error);
+            };
+        } else {
+            alert("WebSocket NOT supported by your Browser or you didn't enter a username!");
+        }
+    }
+
+    function sendMessage() {
+        const message = document.getElementById("message").value;
+        if (ws && ws.readyState === WebSocket.OPEN) {
+            ws.send(message);
+            document.getElementById("message").value = "";
+        } else {
+            alert("Not connected to the server.");
+        }
+    }
+</script>
+</body>
+</html>
